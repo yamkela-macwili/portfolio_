@@ -1,0 +1,167 @@
+/* General Styles */
+
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #7DA0CA, #5483B3, #052659, #021024);
+  color: #C1E8FF;
+}
+
+h1,
+h2,
+h3 {
+  color: #FFA586;
+}
+
+header {
+  background-color: #051016;
+  color: #e2daac;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.portfolio-heading {
+  margin-top: 0;
+}
+
+nav {
+  background-color: #446063;
+  color: #e2daac;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 5px 50px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Specific Styles */
+
+#projects {
+  padding-bottom: 50px;
+}
+
+#project-container {
+  display: flex;
+  overflow-y: auto;
+}
+
+.project-panel {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.project {
+  width: 400px;
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+.project-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project-tools img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#projects::-webkit-scrollbar {
+  height: 8px;
+}
+
+#projects::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+#projects::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+#contact {
+  background-color: #051016;
+  color: #e2daac;
+}
+
+/* Additional Style for Profile Image */
+
+#profile-image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("./image/Profile1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-section {
+  font-size: 20px;
+  padding: 50px 10px;
+}
+
+.intro-section h1 {
+  font-size: 40px;
+  color: #E16E79;
+  margin-top: 100px;
+  position: relative;
+  left: 100%;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* Resizing Image Icons */
+
+.contact-icons img {
+  width: 50px;
+  height: 50px;
+}
